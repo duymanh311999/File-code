@@ -1,6 +1,3 @@
-
-
-
 // store.html ====================================
 $(document).ready(function () {
     $(".image-slider").slick({
@@ -41,9 +38,7 @@ $(document).ready(function () {
       arrows: true,
       draggable: true,
       prevArrow: `<button type='button' class='slick-prev--1 slick-arrow--1'><ion-icon name="arrow-back-outline"></ion-icon></button>`,
-      nextArrow: `<button type='button' class='slick-next--1 slick-arrow--1'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
-      
-
+      nextArrow: `<button type='button' class='slick-next--1 slick-arrow--1'><ion-icon name="arrow-forward-outline"></ion-icon></button>`,    
       responsive: [
         {
           breakpoint: 1301,
@@ -68,7 +63,7 @@ $(document).ready(function () {
   });
 
 
-// top buttion ==================================
+// back to top ==================================
 
 // Get the button
 let mybutton = document.getElementById("goTop");
@@ -83,7 +78,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
@@ -92,15 +86,11 @@ function topFunction() {
 
 
 
-
-// email ===================================
-  
+// email ==================================
   const email = document.getElementById('email1')
   const alert = document.querySelector('.alert1')
   const patternEmail = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/
-  function checkText() {
-
-    
+  function checkText() {   
       if (email.value.length ==0) {
         // chưa nhập email thì thông báo mất đi
         // set nội dung thông báo trống
@@ -126,15 +116,13 @@ function topFunction() {
           alert.style.marginTop = '0.5%'
           alert.style.fontWeight = '700'
         }
-      }
-    
+      }  
   } 
   
 
 // Buy.html ==============================
 
 // Số lượng sản phẩm
-
   $('.btn-number').click(function(e){
     e.preventDefault();
     
@@ -192,13 +180,13 @@ $('.input-number').change(function() {
     
 });
 $(".input-number").keydown(function (e) {
-        // Allow: backspace, delete, tab, escape, enter and .
+        // Allow: backspace, delete, tab, escape, enter and.
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
              // Allow: Ctrl+A
             (e.keyCode == 65 && e.ctrlKey === true) || 
              // Allow: home, end, left, right
             (e.keyCode >= 35 && e.keyCode <= 39)) {
-                 // let it happen, don't do anything
+             // let it happen, don't do anything
                  return;
         }
         // Ensure that it is a number and stop the keypress
@@ -207,7 +195,8 @@ $(".input-number").keydown(function (e) {
         }
     });
 
-// zoom 
+
+// zoom ================================
     const images = document.querySelectorAll(".image img");
     images.forEach((item) => item.addEventListener("click", handleZoomImage));
     function handleZoomImage(event) {     
@@ -222,16 +211,12 @@ $(".input-number").keydown(function (e) {
                 class="lightbox-image"
             />
             <i><ion-icon class="fa fa-angle-right lightbox-next" name="chevron-forward-outline"></ion-icon></i>
-          </div>
-          
-        </div>`;
-        
-    document.body.insertAdjacentHTML("beforeend", template);
-    
+          </div>     
+        </div>`;      
+    document.body.insertAdjacentHTML("beforeend", template); 
     }
     
     let index = 0;
-    
     
     document.body.addEventListener("click", function(e) {
         const lightImage = document
@@ -252,7 +237,6 @@ $(".input-number").keydown(function (e) {
           const newSrc = [...images][index].getAttribute("src");
           lightImage.setAttribute("src", newSrc)
         }
-      
     
         else if
         (e.target.matches(".lightbox-prev")){
@@ -265,13 +249,11 @@ $(".input-number").keydown(function (e) {
         }
         const newSrc = [...images][index].getAttribute("src");
         lightImage.setAttribute("src", newSrc)
-      }
-      
-        
+      }            
     });
     
 
-   // slide 
+   // slide ======================================
     $(document).ready(function () {
       $(".image-slider--2").slick({
         slidesToShow: 1,
@@ -298,7 +280,7 @@ $(".input-number").keydown(function (e) {
             },
           },
         ],
-        autoplay: false, 
+        autoplay: true, 
         autoplaySpeed: 1000,
       });
     });

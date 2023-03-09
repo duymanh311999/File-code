@@ -25,9 +25,9 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="./store.css" />
-    <link rel="stylesheet" href="./buy.css" />
-    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../css/store.css" />
+    <link rel="stylesheet" href="../css/buy.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -38,6 +38,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
   </head>
   <body>
+     <!-- Nav bar ====================================== -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="./store.html">CANVAS</a>
@@ -64,7 +65,7 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="false"              
                 >
                   MEN
                 </a>
@@ -238,17 +239,14 @@
             </ul>
           </div>
 
-
-        <div id="sightin-login">
-          
-          <div class="sigthin" >
-            
+ <!-- Sight in - log in ====================================== -->
+        <div id="sightin-login">      
+          <div class="sigthin" >          
             <a class="navbar-brand sightup" href="#">
-              <!-- Đăng nhập ====================================== -->
+              <!-- Sight in ====================================== -->
               <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Sight in
-              </button>
-            
+              </button>           
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -258,10 +256,8 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <h3 class="heading">Thành viên đăng ký</h3>
-                            <p class="desc">Đăng ký để là thành viên tại đây</p>
-                  
-                          <div class="spacer"></div>
-                  
+                            <p class="desc">Đăng ký để là thành viên tại đây</p>      
+                          <div class="spacer"></div>               
                           <div class="form-group">
                             <label for="fullname" class="form-label">Tên đầy đủ</label>
                             <input
@@ -270,6 +266,7 @@
                               type="text"
                               placeholder="VD: Duy Mạnh"
                               class="form-control"
+                              autocomplete="on"
                             />
                             <span class="form-message"></span>
                           </div>
@@ -282,6 +279,7 @@
                               type="text"
                               placeholder="VD: duymanh@gmail.com"
                               class="form-control"
+                              autocomplete="on"
                             />
                             <span class="form-message"></span>
                           </div>
@@ -294,6 +292,7 @@
                               type="password"
                               placeholder="Nhập mật khẩu"
                               class="form-control"
+                              autocomplete="on"
                             />
                             <span class="form-message"></span>
                             <div class="checkbox">
@@ -311,104 +310,96 @@
                               placeholder="Nhập lại mật khẩu"
                               type="password"
                               class="form-control"
+                              autocomplete="on"
                             />
                             <span class="form-message"></span>
                             <div class="checkbox">
                               <input  type="checkbox" onclick="myFunction1()"><h5>Show Password</h5>
                             </div>                                    
-                          </div>
-                  
-                          <button class="form-submit">Đăng ký</button>
-    
-                    
-                          
-                    </form>
-                    
-                    
+                          </div>              
+                          <button class="form-submit">Đăng ký</button>                                          
+                    </form>                                 
                  </div>
                </div>
               </div>
-            </a>
-            
+            </a>       
           </div>
         
             
           <a style="padding-left: 4px; padding-right: 4px;">|</a>
 
-          <div class="login">
-          
-            
+         <div class="login">                 
             <a class="navbar-brand sightup" href="#">
-              <!-- Đăng nhập ====================================== -->
+              <!-- Log in ====================================== -->
              <button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal--1">
                Login
-             </button>
-             
+             </button>            
              <!-- Modal -->
              <div class="modal fade" id="exampleModal--1" tabindex="-1" aria-labelledby="exampleModalLabel--1" aria-hidden="true">
                <div class="modal-dialog">
-                 <div class="modal-content"> 
-                             
-
+                 <div class="modal-content">                            
                  <form action="" method="POST" class="form" id="form-2">
                   <div class="modal-header">              
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                    <h3 class="heading">Đăng nhập</h3>
-                   <p class="desc">Đăng nhập tại đây</p>
-           
-                   <div class="spacer"></div>
-           
+                   <p class="desc">Đăng nhập tại đây</p>        
+                   <div class="spacer"></div>        
                    <div class="form-group">
                      <label for="email" class="form-label">Email</label>
-                     <input id="email" name="email" type="text" placeholder="VD: email@domain.com" class="form-control">
+                     <input 
+                     id="email" 
+                     name="email" 
+                     type="text" 
+                     placeholder="VD: email@domain.com" 
+                     class="form-control" 
+                     autocomplete="on">
                      <span class="form-message"></span>
                    </div>
            
                    <div class="form-group">
                      <label for="password" class="form-label">Mật khẩu</label>
-                     <input id="myInput1" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                     <input 
+                     id="myInput1" 
+                     name="password" 
+                     type="password" 
+                     placeholder="Nhập mật khẩu" 
+                     class="form-control" 
+                     autocomplete="on">
                      <span class="form-message"></span>
                      <div class="checkbox">
                      <input type="checkbox" onclick="myFunction2()"><h5>Show Password</h5>
                     </div>
-                   </div>
-           
+                   </div>        
                    <button class="form-submit">Đăng nhập</button>
-                 </form>
-                     
-                     
+                 </form>                                  
                </div>
-             </div>
-             
-           </a>
-            
-          
-          </div>
-      
-        </div> 
-          
+             </div>         
+           </a>               
+          </div> 
+        </div>         
       </nav>
 
-      
+<!-- back on top ====================================== -->
       <button onclick="topFunction()" id="goTop" title="Go to top"><ion-icon name="arrow-up-outline"></ion-icon></button>
 
 
+<!-- Item ====================================== -->
       <div id="buying-item" class="buying-item">
         <div class="container-fluid">
             <div class="row">
                 <div style="height: 80%" class="col-lg-6 img col-md-12">                  
                       <div class="image">
-                        <img src="./images/1-1.jpg" />  
+                        <img src="../images/1-1.jpg" />  
                       </div>
                       <div class="image">                             
-                        <img src="./images/1-2.jpg" />   
+                        <img src="../images/1-2.jpg" />   
                       </div>                                   
                       <div class="image">
-                        <img src="./images/1-3.jpg" /> 
+                        <img src="../images/1-3.jpg" /> 
                       </div>      
                       <div class="image">                              
-                        <img src="./images/1 (8).jpg" />     
+                        <img src="../images/1 (8).jpg" />     
                       </div>             
                 </div>
 
@@ -544,16 +535,15 @@
                                 <a href="https://www.figma.com/" class="icon" target="_blank" rel="noopener noreferrer" ><ion-icon style="width:25px; height:25px" name="logo-figma"></ion-icon></a>
                                 <a href="https://www.instagram.com/" class="icon" target="_blank" rel="noopener noreferrer" ><ion-icon style="width:25px; height:25px" name="logo-instagram"></ion-icon></a>
                             </div>
-                        </div>
-                        
+                        </div>               
                     
-                    </div>                
+                  </div>                
                 </div>
-            </div>
-        </div>
-      </div>
+             </div>
+          </div>
+       </div>
 
-
+ <!-- More item ====================================== -->
       <div id="more-item">
         <div class="container">
           <div class="row">     
@@ -563,17 +553,17 @@
               <div class="image-slider--2">
                 <div class="image-item">
                   <div class="image--1">                                                                         
-                      <img src="./images/4-1.jpg" />                    
+                      <img src="../images/4-1.jpg" />                    
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">                                                          
-                    <img src="./images/4-2.jpg" />
+                    <img src="../images/4-2.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">                                                         
-                    <img src="./images/4-1.jpg" />
+                    <img src="../images/4-1.jpg" />
                   </div>
                 </div>
               </div>  
@@ -583,25 +573,23 @@
                 <h2>Zala</h2>
                 <h3>$12.22</h3>
               </div>
-
             </div>
 
-            <div class="col-lg-3 col-6">
-              
+            <div class="col-lg-3 col-6">       
               <div class="image-slider--2">
                 <div class="image-item">
                   <div class="image--1">                                                                        
-                      <img src="./images/7-1.jpg" />
+                      <img src="../images/7-1.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">                                     
-                    <img src="./images/7-2.jpg" />
+                    <img src="../images/7-2.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">                                  
-                    <img src="./images/7-3.jpg" />
+                    <img src="../images/7-3.jpg" />
                   </div>
                 </div>
               </div>  
@@ -617,17 +605,17 @@
               <div class="image-slider--2">
                 <div class="image-item">
                   <div class="image--1">                                                                 
-                      <img src="./images/8-1.jpg" />
+                      <img src="../images/8-1.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">            
-                    <img src="./images/8-2.jpg" />
+                    <img src="../images/8-2.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">            
-                    <img src="./images/8-1.jpg" />
+                    <img src="../images/8-1.jpg" />
                   </div>
                 </div>
               </div>  
@@ -640,22 +628,21 @@
             </div>
 
 
-            <div class="col-lg-3 col-6">
-              
+            <div class="col-lg-3 col-6">      
               <div class="image-slider--2">
                 <div class="image-item">
                   <div class="image--1">                                                 
-                      <img src="./images/9-1.jpg" />
+                      <img src="../images/9-1.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">            
-                    <img src="./images/9-2.jpg" />
+                    <img src="../images/9-2.jpg" />
                   </div>
                 </div>
                 <div class="image-item">
                   <div class="image--1">                                            
-                    <img src="./images/9-3.jpg" />
+                    <img src="../images/9-3.jpg" />
                   </div>
                 </div>
               </div> 
@@ -664,7 +651,7 @@
                 <h1>Air force 1</h1>
                 <h2>Nike</h2>
                 <h3>$78</h3>
-              </div>
+              </div>         
             </div>
 
 
@@ -673,7 +660,7 @@
       </div>
 
 
-
+ <!-- contact ====================================== -->
 
     <div id="contact">
       <div class="container-fluid--6">
@@ -689,6 +676,7 @@
     </div>
 
 
+ <!-- Footer ====================================== -->
       <div class="container-fluid--7">
         <div class="row">
           <div class="col-lg-2 col-md-3 col-6">
@@ -735,61 +723,61 @@
             <h1>Instagram Feed</h1>
             <div class="images">
               <div class="image-icon">
-                <img class="image" src="./images/29400514_2070982929853548_51086651711029248_n.jpg" />
+                <img class="image" src="../images/29400514_2070982929853548_51086651711029248_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29401198_2041410189471773_6315848566677962752_n.jpg" />
+                <img class="image" src="../images/29401198_2041410189471773_6315848566677962752_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29401443_391780411297168_6177764775406075904_n.jpg" />
+                <img class="image" src="../images/29401443_391780411297168_6177764775406075904_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29402451_429139237508825_1463019234299740160_n.jpg" />
+                <img class="image" src="../images/29402451_429139237508825_1463019234299740160_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29414625_1209444259158792_9161404639550111744_n.jpg" />
+                <img class="image" src="../images/29414625_1209444259158792_9161404639550111744_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29415091_733491353705817_2228369551609823232_n.jpg" />
+                <img class="image" src="../images/29415091_733491353705817_2228369551609823232_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29415705_1631149850253944_8004463019784404992_n.jpg" />
+                <img class="image" src="../images/29415705_1631149850253944_8004463019784404992_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29417843_563424207355396_1055402000113467392_n.jpg" />
+                <img class="image" src="../images/29417843_563424207355396_1055402000113467392_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29417225_348112442367201_4553651767488806912_n.jpg" />
+                <img class="image" src="../images/29417225_348112442367201_4553651767488806912_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
               </div>
               <div class="image-icon">
-                <img class="image" src="./images/29738164_429456984142491_999057840280698880_n.jpg" />
+                <img class="image" src="../images/29738164_429456984142491_999057840280698880_n.jpg" />
                 <a class="icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" >
                   <ion-icon class="icon--1" name="logo-instagram"></ion-icon>
                 </a>
@@ -812,8 +800,8 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./store.js"></script>
-    <script src="./login.js"></script>
+    <script src="../js/store.js"></script>
+    <script src="../js/login.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

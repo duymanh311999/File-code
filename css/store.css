@@ -212,7 +212,7 @@
   text-align: center;
   color: #333;
   outline: none;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 .image .text .button .button2 {
   width: 150px;
@@ -222,6 +222,7 @@
   text-align: center;
   color: #333;
   outline: none;
+  margin-left: 15%;
 }
 .image .text .button .button1:hover,
 .image .text .button .button2:hover {
