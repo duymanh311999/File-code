@@ -1,0 +1,301 @@
+
+#exampleModal {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#exampleModal .main {
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#exampleModal .form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+}
+#exampleModal .form .heading {
+    font-size: 2rem;
+    padding-top: 5%;
+}
+#exampleModal .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+#exampleModal .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+#exampleModal .form-label,
+#exampleModal .form-message {
+    text-align: left;
+}
+
+#exampleModal .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1rem;
+    font-size: 16px;
+}
+
+#exampleModal .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 13px;
+}
+
+#exampleModal .form-control:hover {
+    border-color: #1dbfaf;
+}
+
+#exampleModal .form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+#exampleModal .form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+#exampleModal .form-message {
+    font-size: 12px;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+#exampleModal .form-submit {
+    outline: none;
+    background-color: #333;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#exampleModal .form-submit:hover {
+    background-color: #1ac7b6;
+}
+
+#exampleModal .spacer {
+    margin-top: 36px;
+}
+
+#exampleModal .modal-content{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#exampleModal .modal-header{
+    padding-top: 0;
+}
+
+
+.navbar-brand .btn-primary{
+    color: #333;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    
+}
+
+
+#sightin-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sightin-login .sightup{
+    padding: 0;
+    margin: 0;
+}
+
+
+ /* dang nhap =========================*/
+#exampleModal--1 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#exampleModal--1  .main {
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#exampleModal--1  .form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 2px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+}
+#exampleModal--1  .form .heading {
+    font-size: 2rem;
+    padding-top: 5%;
+}
+#exampleModal--1  .form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 1.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+#exampleModal--1  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+#exampleModal--1  .form-label,
+#exampleModal--1  .form-message {
+    text-align: left;
+}
+
+#exampleModal--1  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1rem;
+    font-size: 16px;
+}
+
+#exampleModal--1  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 13px;
+}
+
+#exampleModal--1  .form-control:hover {
+    border-color: #1dbfaf;
+}
+
+#exampleModal--1  .form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+#exampleModal--1  .form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+#exampleModal--1  .form-message {
+    font-size: 12px;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+#exampleModal--1  .form-submit {
+    outline: none;
+    background-color: #333;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#exampleModal--1  .form-submit:hover {
+    background-color: #1ac7b6;
+}
+
+#exampleModal--1  .spacer {
+    margin-top: 36px;
+}
+
+#exampleModal--1  .modal-content{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#exampleModal--1 .modal-header{
+    padding-top: 0;
+}
+
+#exampleModal .checkbox {
+    padding-top: 2%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#exampleModal .checkbox input{
+    width: 15px;
+    height: 15px;
+    padding-left: 2%;
+}
+
+#exampleModal .checkbox h5{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
+
+#exampleModal--1 .checkbox {
+    padding-top: 2%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#exampleModal--1 .checkbox input{
+    width: 15px;
+    height: 15px;
+    padding-left: 2%;
+}
+
+#exampleModal--1 .checkbox h5{
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+}
